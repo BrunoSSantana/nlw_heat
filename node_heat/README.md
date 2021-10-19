@@ -1,0 +1,7 @@
+- Receber code (string)
+- Recupear o acess_token no github
+- Recuperar infos do user no github
+- Verificar se  o usuário existe no db
+  - se SIM => Gera um token
+  - se NÃO => Cria no db e gera um token
+- Retorna o token com as infos do useário 
