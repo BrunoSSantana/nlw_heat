@@ -76,6 +76,7 @@ Technologies that I used to develop this api
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/) -->
 - [Prisma](https://www.prisma.io/)
+- [Vite](https://vitejs.dev/)
 
 ## 💻 Getting started
 
