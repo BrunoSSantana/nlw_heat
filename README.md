@@ -41,7 +41,7 @@ README - ⚠️ [WIP]
   </a>
 </p>
 
-<img alt="Layout" src="https://res.cloudinary.com/bruno-santanas/image/upload/v1586302738/assets/previewApp_fnt7hm.png">
+<!-- <img alt="Layout" src=""> -->
 
 ## 👨🏻‍💻 About the project
 
