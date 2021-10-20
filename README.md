@@ -31,13 +31,13 @@ README - ⚠️ [WIP]
   <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-license">License</a>
+  <a href="#-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-references">References</a>
 </p>
 
 <p id="insomniaButton" align="center">
-  <a href="./doc.json" target="_blank">
-    <img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia">
+  <a href="https://insomnia.rest/run/?label=node_heat&uri=https%3A%2F%2Fraw.githubusercontent.com%2FBrunoSSantana%2Fnlw_heat%2Fmaster%2Fdoc.json" target="_blank">
+    <img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia" />
   </a>
 </p>
 
@@ -76,11 +76,14 @@ Technologies that I used to develop this api
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/) -->
 - [Prisma](https://www.prisma.io/)
+
 - [Vite](https://vitejs.dev/)
+
+- [Socket.IO](https://socket.io/)
 
 ## 💻 Getting started
 
-Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomniaButton) button
+Import the `Insomnia.json` on Insomnia App or click on [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=node_heat&uri=https%3A%2F%2Fraw.githubusercontent.com%2FBrunoSSantana%2Fnlw_heat%2Fmaster%2Fdoc.json)
 
 ### Requirements
 
@@ -90,8 +93,16 @@ Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomn
 
 **Clone the project and access the folder**
 
+**Clone by HTTPS:**
+
 ```bash
 $ git clone https://github.com/BrunoSSantana/nlw_heat.git && cd nlw_heat
+```
+
+**Clone by GitHub CLI:**
+
+```bash
+$ gh repo BrunoSSantana/nlw_heat
 ```
 
 **Follow the steps below**
@@ -113,14 +124,13 @@ $ yarn dev
 
 # Well done, project is started!
 ```
-<!-- 
 ### Web
 
 _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
 # Starting from the project root folder, go to frontend folder
-$ cd frontend
+$ cd web_heat
 
 # Install the dependencies
 $ yarn
@@ -128,8 +138,9 @@ $ yarn
 # Be sure the file 'src/services/api.ts' have the IP to your API
 
 # Start the client
-$ yarn start
+$ yarn dev
 ```
+<!-- 
 
 ### Mobile
 
@@ -188,3 +199,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with 💜 &nbsp;by Bruno Santana 👋 &nbsp;[See my linkedin](https://www.linkedin.com/in/bruno-santanas/) 
+
+## References
+- [Template Readme By Elias Gabriel](https://github.com/EliasGcf/readme-template)
