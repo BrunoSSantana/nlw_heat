@@ -47,12 +47,16 @@ README - ⚠️ [WIP]
 
 - <p style="color: purple;">Repository created during NLW Heat on the impulse track where we built a platform to gather feedback from events.</p>
 
-<p align="center">
-  <img src=".github/img/web_login.png" />
-</p>
+**Page Login**
 
 <p align="center">
   <img src=".github/img/web_logout.png" />
+</p>
+
+**Page Send Message**
+
+<p align="center">
+  <img src=".github/img/web_login.png" />
 </p>
 
 ## 🚀 Technologies
