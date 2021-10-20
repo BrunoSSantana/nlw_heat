@@ -1,10 +1,10 @@
 README - ⚠️ [WIP]
 <h1 align="center">
-	<img alt="Logo" src=".github/logo.png" />
+	<img alt="Logo" src=".github/img/logo.png" />
 </h1>
 
 <h3 align="center">
-  Title or one short slogan.
+  NLW HEAT
 </h3>
 
 <p align="center">
@@ -46,6 +46,14 @@ README - ⚠️ [WIP]
 ## 👨🏻‍💻 About the project
 
 - <p style="color: purple;">Repository created during NLW Heat on the impulse track where we built a platform to gather feedback from events.</p>
+
+<p align="center">
+  <img src=".github/img/web_login.png" />
+</p>
+
+<p align="center">
+  <img src=".github/img/web_logout.png" />
+</p>
 
 ## 🚀 Technologies
 
