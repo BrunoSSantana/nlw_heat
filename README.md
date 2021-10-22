@@ -67,7 +67,7 @@ Technologies that I used to develop this api
 <!-- - [ReactJS](https://reactjs.org/) -->
 - [TypeScript](https://www.typescriptlang.org/)
 <!-- - [React Native](https://reactnative.dev/)
-- [Expo](https://expo.io/) -->
+ -->
 - [Express](https://expressjs.com/pt-br/)
 <!-- - [TypeORM](https://typeorm.io/#/)
 - [Celebrate](https://github.com/arb/celebrate)
@@ -78,7 +78,6 @@ Technologies that I used to develop this api
 - [SuperTest](https://github.com/visionmedia/supertest)
 - [Nodemon](https://nodemon.io/)
 - [Sucrase](https://github.com/alangpierce/sucrase)
-- [React Router DOM](https://reacttraining.com/react-router/)
 - [React Navigation](https://reactnavigation.org/)
 - [React Icons](https://react-icons.netlify.com/#/)
 - [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/)
@@ -87,11 +86,13 @@ Technologies that I used to develop this api
 <!-- - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/) -->
+- [React Router DOM](https://reacttraining.com/react-router/)
 - [Prisma](https://www.prisma.io/)
 
 - [Vite](https://vitejs.dev/)
 
 - [Socket.IO](https://socket.io/)
+- [Expo](https://expo.io/)
 
 ## 💻 Getting started
 
@@ -101,6 +102,7 @@ Import the `Insomnia.json` on Insomnia App or click on [![Run in Insomnia}](http
 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
+- [Expo](https://docs.expo.dev/#quick-start)
 <!-- - One instance of [PostgreSQL](https://www.postgresql.org/) -->
 
 **Clone the project and access the folder**
@@ -152,7 +154,6 @@ $ yarn
 # Start the client
 $ yarn dev
 ```
-<!-- 
 
 ### Mobile
 
@@ -160,20 +161,19 @@ _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
 # Starting from the project root folder, go to mobile folder
-$ cd mobile
+$ cd app_heat
 
 # Install the dependencies
 $ yarn
 
 # Be sure the file 'src/services/api.ts' have the IP to your API
 
-# If you are going to emulate with android, run this command
-# Be sure to have the emulator open
-$ yarn android
+# Be sure to have the expo installed
+# Start the application
+$ expo start
 
-# If you are going to emulate with ios, run this command
-$ yarn ios
 ```
+<!-- 
 
 ## 🤔 How to contribute
 
