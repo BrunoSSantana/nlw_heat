@@ -66,8 +66,9 @@ Technologies that I used to develop this api
 - [Node.js](https://nodejs.org/en/)
 <!-- - [ReactJS](https://reactjs.org/) -->
 - [TypeScript](https://www.typescriptlang.org/)
-<!-- - [React Native](https://reactnative.dev/)
- -->
+
+- [React Native](https://reactnative.dev/)
+
 - [Express](https://expressjs.com/pt-br/)
 <!-- - [TypeORM](https://typeorm.io/#/)
 - [Celebrate](https://github.com/arb/celebrate)
@@ -79,19 +80,22 @@ Technologies that I used to develop this api
 - [Nodemon](https://nodemon.io/)
 - [Sucrase](https://github.com/alangpierce/sucrase)
 - [React Navigation](https://reactnavigation.org/)
-- [React Icons](https://react-icons.netlify.com/#/)
 - [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/)
 - [Styled Components](https://styled-components.com/) -->
+- [React Icons](https://react-icons.netlify.com/#/)
+
 - [Axios](https://github.com/axios/axios)
 <!-- - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/) -->
 - [React Router DOM](https://reacttraining.com/react-router/)
+
 - [Prisma](https://www.prisma.io/)
 
 - [Vite](https://vitejs.dev/)
 
 - [Socket.IO](https://socket.io/)
+
 - [Expo](https://expo.io/)
 
 ## 💻 Getting started
@@ -135,8 +139,6 @@ $ yarn prisma migrate dev
 
 # To finish, run the api service
 $ yarn dev
-
-# Well done, project is started!
 ```
 ### Web
 
@@ -171,7 +173,6 @@ $ yarn
 # Be sure to have the expo installed
 # Start the application
 $ expo start
-
 ```
 <!-- 
 
