@@ -64,38 +64,17 @@ README - ⚠️ [WIP]
 Technologies that I used to develop this api
 
 - [Node.js](https://nodejs.org/en/)
-<!-- - [ReactJS](https://reactjs.org/) -->
+- [ReactJS](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-
 - [React Native](https://reactnative.dev/)
-
 - [Express](https://expressjs.com/pt-br/)
-<!-- - [TypeORM](https://typeorm.io/#/)
-- [Celebrate](https://github.com/arb/celebrate)
-- [Sequelize](https://sequelize.org/)
-- [PostgreSQL](https://www.postgresql.org/) -->
 - [SQLite](https://www.sqlite.org/)
-<!-- - [Jest](https://jestjs.io/)
-- [SuperTest](https://github.com/visionmedia/supertest)
-- [Nodemon](https://nodemon.io/)
-- [Sucrase](https://github.com/alangpierce/sucrase)
-- [React Navigation](https://reactnavigation.org/)
-- [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/)
-- [Styled Components](https://styled-components.com/) -->
 - [React Icons](https://react-icons.netlify.com/#/)
-
 - [Axios](https://github.com/axios/axios)
-<!-- - [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [EditorConfig](https://editorconfig.org/) -->
 - [React Router DOM](https://reacttraining.com/react-router/)
-
 - [Prisma](https://www.prisma.io/)
-
 - [Vite](https://vitejs.dev/)
-
 - [Socket.IO](https://socket.io/)
-
 - [Expo](https://expo.io/)
 
 ## 💻 Getting started
