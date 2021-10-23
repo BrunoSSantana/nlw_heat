@@ -1,4 +1,4 @@
-import { FormEvent, useContext, useState } from 'react'
+import { FormEvent, useContext, useEffect, useState } from 'react'
 import { VscGithubInverted, VscSignOut } from 'react-icons/vsc'
 import { AuthContext } from '../../contexts/auth'
 import { api } from '../../services/api'
@@ -36,6 +36,20 @@ export function SendMessageForm() {
       // icon: "🚀"
       });
   }
+
+  useEffect(() => {
+    toast.success('Logado!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'dark',
+      icon: "🚀"
+      });
+  }, [])
 
   return (
     <div className={styles.sendMessageFormWrapper}>
