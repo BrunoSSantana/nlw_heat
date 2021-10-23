@@ -4,6 +4,9 @@ import { AuthContext } from '../../contexts/auth'
 import { api } from '../../services/api'
 import styles from './styles.module.scss'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export function SendMessageForm() {
 
   const { user, signOut } = useContext(AuthContext)
@@ -21,6 +24,17 @@ export function SendMessageForm() {
     })
 
     setMessage('')
+    toast.success('Message sent!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'dark',
+      // icon: "🚀"
+      });
   }
 
   return (
@@ -41,6 +55,17 @@ export function SendMessageForm() {
       </header>
 
       <form onSubmit={handleSendMessage} className={styles.sendMessageForm}>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <label htmlFor="message">Mensagem</label>
         <textarea
         name="message"
