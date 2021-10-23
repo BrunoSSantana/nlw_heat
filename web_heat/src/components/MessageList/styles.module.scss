@@ -22,8 +22,48 @@
   .message {
     max-width: 440px;
 
+    // transition: all .5s ease;
+    animation: linear .3s slidein;
+    @keyframes slidein {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+        }
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+        }
+    }
+
     &:nth-child(2) {
       margin-left: 80px;
+
+      animation: .5s linear .3s slidein;
+      @keyframes slidein {
+        from {
+          transform: translateY(30px);
+          opacity: 0;
+          }
+        to {
+          transform: translateY(0px);
+          opacity: 1;
+          }
+      }
+    }
+
+    &:nth-child(3) {
+
+      animation: 1s linear .3s slidein;
+      @keyframes slidein {
+        from {
+          transform: translateY(30px);
+          opacity: 0;
+          }
+        to {
+          transform: translateY(0px);
+          opacity: 1;
+          }
+      }
     }
 
     .messageContent {
