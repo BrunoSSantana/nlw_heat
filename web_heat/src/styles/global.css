@@ -10,5 +10,5 @@ body {
   background: #121214;
   display: flex;
   justify-content: center;
-
+  overflow: hidden;
 }
