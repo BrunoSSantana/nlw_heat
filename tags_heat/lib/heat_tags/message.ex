@@ -1,8 +1,11 @@
-defmodule TagsHeat.Message do
+defmodule HeatTags.Message do
   use Ecto.Schema
+
   import Ecto.Changeset
 
   @required_params [:message, :username, :email]
+
+  @derive {Jason.Encoder, only: [:id] ++ @required_params}
 
   schema "messages" do
     field :message, :string
@@ -13,15 +16,10 @@ defmodule TagsHeat.Message do
   end
 
   def changeset(params) do
-    # forma 1
-    # IO.inspect(cast(%__MODULE__{}, params, @required_params))
-
-    # forma 2 (com pipe operator)
     %__MODULE__{}
     |> cast(params, @required_params)
     |> validate_required(@required_params)
     |> validate_length(:message, min: 1, max: 140)
     |> validate_format(:email, ~r/@/)
   end
-
 end

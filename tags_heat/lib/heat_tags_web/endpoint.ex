@@ -1,13 +1,13 @@
-defmodule TagsHeatWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :tags_heat
+defmodule HeatTagsWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :heat_tags
 
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
-    key: "_tags_heat_key",
-    signing_salt: "uyxIXphj"
+    key: "_heat_tags_key",
+    signing_salt: "8RQz/pBO"
   ]
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
@@ -18,7 +18,7 @@ defmodule TagsHeatWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :tags_heat,
+    from: :heat_tags,
     gzip: false,
     only: ~w(assets fonts images favicon.ico robots.txt)
 
@@ -26,7 +26,7 @@ defmodule TagsHeatWeb.Endpoint do
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :tags_heat
+    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :heat_tags
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,
@@ -44,5 +44,5 @@ defmodule TagsHeatWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug TagsHeatWeb.Router
+  plug HeatTagsWeb.Router
 end

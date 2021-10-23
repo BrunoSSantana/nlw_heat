@@ -1,12 +1,12 @@
-defmodule TagsHeatWeb do
+defmodule HeatTagsWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use TagsHeatWeb, :controller
-      use TagsHeatWeb, :view
+      use HeatTagsWeb, :controller
+      use HeatTagsWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,19 +19,19 @@ defmodule TagsHeatWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: TagsHeatWeb
+      use Phoenix.Controller, namespace: HeatTagsWeb
 
       import Plug.Conn
-      import TagsHeatWeb.Gettext
-      alias TagsHeatWeb.Router.Helpers, as: Routes
+      import HeatTagsWeb.Gettext
+      alias HeatTagsWeb.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/tags_heat_web/templates",
-        namespace: TagsHeatWeb
+        root: "lib/heat_tags_web/templates",
+        namespace: HeatTagsWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller,
@@ -54,7 +54,7 @@ defmodule TagsHeatWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import TagsHeatWeb.Gettext
+      import HeatTagsWeb.Gettext
     end
   end
 
@@ -63,9 +63,9 @@ defmodule TagsHeatWeb do
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
 
-      import TagsHeatWeb.ErrorHelpers
-      import TagsHeatWeb.Gettext
-      alias TagsHeatWeb.Router.Helpers, as: Routes
+      import HeatTagsWeb.ErrorHelpers
+      import HeatTagsWeb.Gettext
+      alias HeatTagsWeb.Router.Helpers, as: Routes
     end
   end
 

@@ -1,5 +1,5 @@
-defmodule TagsHeat.Repo do
+defmodule HeatTags.Repo do
   use Ecto.Repo,
-    otp_app: :tags_heat,
+    otp_app: :heat_tags,
     adapter: Ecto.Adapters.Postgres
 end

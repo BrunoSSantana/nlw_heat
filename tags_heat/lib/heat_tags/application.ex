@@ -1,4 +1,4 @@
-defmodule TagsHeat.Application do
+defmodule HeatTags.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -9,20 +9,21 @@ defmodule TagsHeat.Application do
   def start(_type, _args) do
     children = [
       # Start the Ecto repository
-      TagsHeat.Repo,
+      HeatTags.Repo,
       # Start the Telemetry supervisor
-      TagsHeatWeb.Telemetry,
+      HeatTagsWeb.Telemetry,
       # Start the PubSub system
-      {Phoenix.PubSub, name: TagsHeat.PubSub},
+      {Phoenix.PubSub, name: HeatTags.PubSub},
       # Start the Endpoint (http/https)
-      TagsHeatWeb.Endpoint
-      # Start a worker by calling: TagsHeat.Worker.start_link(arg)
-      # {TagsHeat.Worker, arg}
+      HeatTagsWeb.Endpoint,
+      # Start a worker by calling: HeatTags.Worker.start_link(arg)
+      # {HeatTags.Worker, arg}
+      HeatTags.Scheduler
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: TagsHeat.Supervisor]
+    opts = [strategy: :one_for_one, name: HeatTags.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
@@ -30,7 +31,7 @@ defmodule TagsHeat.Application do
   # whenever the application is updated.
   @impl true
   def config_change(changed, _new, removed) do
-    TagsHeatWeb.Endpoint.config_change(changed, removed)
+    HeatTagsWeb.Endpoint.config_change(changed, removed)
     :ok
   end
 end

@@ -1,4 +1,4 @@
-defmodule TagsHeat.Repo.Migrations.CreateMessages do
+defmodule HeatTags.Repo.Migrations.CreateMessages do
   use Ecto.Migration
 
   def change do

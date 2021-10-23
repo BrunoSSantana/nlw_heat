@@ -1,6 +1,6 @@
-defmodule TagsHeat do
+defmodule HeatTags do
   @moduledoc """
-  TagsHeat keeps the contexts that define your domain
+  HeatTags keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

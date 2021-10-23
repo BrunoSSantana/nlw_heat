@@ -1,11 +1,11 @@
-defmodule TagsHeatWeb.Router do
-  use TagsHeatWeb, :router
+defmodule HeatTagsWeb.Router do
+  use HeatTagsWeb, :router
 
   pipeline :api do
     plug :accepts, ["json"]
   end
 
-  scope "/api", TagsHeatWeb do
+  scope "/api", HeatTagsWeb do
     pipe_through :api
 
     post "/message", MessagesController, :create
@@ -23,7 +23,7 @@ defmodule TagsHeatWeb.Router do
 
     scope "/" do
       pipe_through [:fetch_session, :protect_from_forgery]
-      live_dashboard "/dashboard", metrics: TagsHeatWeb.Telemetry
+      live_dashboard "/dashboard", metrics: HeatTagsWeb.Telemetry
     end
   end
 

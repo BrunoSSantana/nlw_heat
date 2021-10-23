@@ -1,4 +1,4 @@
-defmodule TagsHeatWeb.Telemetry do
+defmodule HeatTagsWeb.Telemetry do
   use Supervisor
   import Telemetry.Metrics
 
@@ -31,23 +31,23 @@ defmodule TagsHeatWeb.Telemetry do
       ),
 
       # Database Metrics
-      summary("tags_heat.repo.query.total_time",
+      summary("heat_tags.repo.query.total_time",
         unit: {:native, :millisecond},
         description: "The sum of the other measurements"
       ),
-      summary("tags_heat.repo.query.decode_time",
+      summary("heat_tags.repo.query.decode_time",
         unit: {:native, :millisecond},
         description: "The time spent decoding the data received from the database"
       ),
-      summary("tags_heat.repo.query.query_time",
+      summary("heat_tags.repo.query.query_time",
         unit: {:native, :millisecond},
         description: "The time spent executing the query"
       ),
-      summary("tags_heat.repo.query.queue_time",
+      summary("heat_tags.repo.query.queue_time",
         unit: {:native, :millisecond},
         description: "The time spent waiting for a database connection"
       ),
-      summary("tags_heat.repo.query.idle_time",
+      summary("heat_tags.repo.query.idle_time",
         unit: {:native, :millisecond},
         description:
           "The time the connection spent waiting before being checked out for the query"
@@ -65,7 +65,7 @@ defmodule TagsHeatWeb.Telemetry do
     [
       # A module, function and arguments to be invoked periodically.
       # This function must call :telemetry.execute/3 and a metric must be added above.
-      # {TagsHeatWeb, :count_users, []}
+      # {HeatTagsWeb, :count_users, []}
     ]
   end
 end

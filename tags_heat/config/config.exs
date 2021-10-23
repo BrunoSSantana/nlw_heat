@@ -7,15 +7,20 @@
 # General application configuration
 import Config
 
-config :tags_heat,
-  ecto_repos: [TagsHeat.Repo]
+config :heat_tags,
+  ecto_repos: [HeatTags.Repo]
 
 # Configures the endpoint
-config :tags_heat, TagsHeatWeb.Endpoint,
+config :heat_tags, HeatTagsWeb.Endpoint,
   url: [host: "localhost"],
-  render_errors: [view: TagsHeatWeb.ErrorView, accepts: ~w(json), layout: false],
-  pubsub_server: TagsHeat.PubSub,
-  live_view: [signing_salt: "FMcHEenG"]
+  render_errors: [view: HeatTagsWeb.ErrorView, accepts: ~w(json), layout: false],
+  pubsub_server: HeatTags.PubSub,
+  live_view: [signing_salt: "gxXhUF5X"]
+
+config :heat_tags, HeatTags.Scheduler,
+  jobs: [
+    {"* * * * * *", {HeatTags.Tags.Count, :call, []}}
+  ]
 
 # Configures the mailer
 #
@@ -24,7 +29,7 @@ config :tags_heat, TagsHeatWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :tags_heat, TagsHeat.Mailer, adapter: Swoosh.Adapters.Local
+config :heat_tags, HeatTags.Mailer, adapter: Swoosh.Adapters.Local
 
 # Swoosh API client is needed for adapters other than SMTP.
 config :swoosh, :api_client, false
