@@ -59,6 +59,18 @@ README - ⚠️ [WIP]
   <img src=".github/img/web_login.png" />
 </p>
 
+**Notification Login**
+
+<p align="center">
+  <img src=".github/img/loginNotification.png" />
+</p>
+
+**Notification Message**
+
+<p align="center">
+  <img src=".github/img/messageNotification.png" />
+</p>
+
 ## 🚀 Technologies
 
 Technologies that I used to develop this api
@@ -70,6 +82,7 @@ Technologies that I used to develop this api
 - [Express](https://expressjs.com/pt-br/)
 - [SQLite](https://www.sqlite.org/)
 - [React Icons](https://react-icons.netlify.com/#/)
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
 - [Axios](https://github.com/axios/axios)
 - [React Router DOM](https://reacttraining.com/react-router/)
 - [Prisma](https://www.prisma.io/)
