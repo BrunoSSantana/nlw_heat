@@ -1,4 +1,3 @@
-README - ⚠️ [WIP]
 <h1 align="center">
 	<img alt="Logo" src=".github/img/logo.png" />
 </h1>
