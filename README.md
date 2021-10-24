@@ -99,7 +99,7 @@ Import the `Insomnia.json` on Insomnia App or click on [![Run in Insomnia}](http
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
 - [Expo](https://docs.expo.dev/#quick-start)
-<!-- - One instance of [PostgreSQL](https://www.postgresql.org/) -->
+- One instance of [PostgreSQL](https://www.postgresql.org/)
 
 **Clone the project and access the folder**
 
@@ -120,7 +120,7 @@ $ gh repo BrunoSSantana/nlw_heat
 ### Backend
 
 ```bash
-# Starting from the project root folder, go to backend folder
+# Starting from the project root folder, go to node_heat folder
 $ cd node_heat
 
 # Install the dependencies
@@ -137,7 +137,7 @@ $ yarn dev
 _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# Starting from the project root folder, go to frontend folder
+# Starting from the project root folder, go to web_heat folder
 $ cd web_heat
 
 # Install the dependencies
@@ -154,7 +154,7 @@ $ yarn dev
 _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# Starting from the project root folder, go to mobile folder
+# Starting from the project root folder, go to app_heat folder
 $ cd app_heat
 
 # Install the dependencies
@@ -166,37 +166,34 @@ $ yarn
 # Start the application
 $ expo start
 ```
-<!-- 
 
-## 🤔 How to contribute
 
-**Make a fork of this repository**
+    Install dependencies with 
+    Create and migrate your database with mix ecto.setup
+    Start Phoenix endpoint with mix phx.server or inside IEx with iex -S mix phx.server
 
-```bash
-# Fork using GitHub official command line
-# If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork BrunoSSantana/NOME_DO_REPO
-```
+### Microservice
 
-**Follow the steps below**
+*Obs.:Configure in tags_heat/config/dev.exs, the database*
 
 ```bash
-# Clone your fork
-$ git clone your-fork-url && cd NOME_DO_REPO
+# Starting from the project root folder, go to tags_heat folder
+$ cd tags_heat
 
-# Create a branch with your feature
-$ git checkout -b my-feature
+# Install the dependencies
+$ mix deps.get
 
-# Make the commit with your changes
-$ git commit -m 'feat: My new feature'
+# Create and migrate your database
+$ mix ecto.setup
 
-# Send the code to your remote branch
-$ git push origin my-feature
+# Start Phoenix endpoint
+$ mix phx.server
+
+# or inside IEx
+iex -S mix phx.server
 ```
 
-After your pull request is merged, you can delete your branch
--->
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
