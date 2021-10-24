@@ -102,8 +102,20 @@ Import the `Insomnia.json` on Insomnia App or click on [![Run in Insomnia}](http
 - [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
 - [Expo](https://docs.expo.dev/#quick-start)
 - One instance of [PostgreSQL](https://www.postgresql.org/)
+- Create acount [Expo.dev](https://expo.dev/)
 
-**Clone the project and access the folder**
+#### Set Configurations Oauth Applications Web and Mobile
+- Create 2 **New OAuth App** in [ Developer settings](https://github.com/settings/developers)
+ - **OAuth for mobile**
+ - Homepage URL: `https://auth.expo.io/@<user-expo>/<app-name>`
+ - Authorization callback URL: `https://auth.expo.io/@<user-expo>/<app-name>`
+ - Save Client ID and Client secrets, add in file .env
+ - **OAuth for mobile**
+ - Homepage URL: `http://localhost:3003`
+ - Authorization callback URL: `http://localhost:3003`
+ - Save Client ID and Client secrets, add in file .env
+
+#### Clone the project and access the folder
 
 **Clone by HTTPS:**
 
@@ -168,12 +180,6 @@ $ yarn
 # Start the application
 $ expo start
 ```
-
-
-    Install dependencies with 
-    Create and migrate your database with mix ecto.setup
-    Start Phoenix endpoint with mix phx.server or inside IEx with iex -S mix phx.server
-
 
 ### Microservice
 
