@@ -89,6 +89,8 @@ Technologies that I used to develop this api
 - [Vite](https://vitejs.dev/)
 - [Socket.IO](https://socket.io/)
 - [Expo](https://expo.io/)
+- [Elixir](https://elixir-lang.org/)
+- [Phoenix Framework](https://www.phoenixframework.org/)
 
 ## 💻 Getting started
 
