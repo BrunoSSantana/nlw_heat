@@ -71,6 +71,18 @@ README - ⚠️ [WIP]
   <img src=".github/img/messageNotification.png" />
 </p>
 
+**Mobile Unauthenticated**
+
+<p align="center">
+  <img src=".github/img/logout.png" />
+</p>
+
+**Mobile Authenticated**
+
+<p align="center">
+  <img src=".github/img/login.png" />
+</p>
+
 ## 🚀 Technologies
 
 Technologies that I used to develop this api
