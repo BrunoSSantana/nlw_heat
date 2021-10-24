@@ -72,14 +72,14 @@
 
 **Mobile Unauthenticated**
 
-<p align="center">
-  <img src=".github/img/logout.png" />
+<p align="left">
+  <img style="width: 250px;" src=".github/img/logout.jpeg" />
 </p>
 
 **Mobile Authenticated**
 
-<p align="center">
-  <img src=".github/img/login.png" />
+<p align="left">
+  <img style="width: 250px;" src=".github/img/login.jpeg" />
 </p>
 
 ## 🚀 Technologies
